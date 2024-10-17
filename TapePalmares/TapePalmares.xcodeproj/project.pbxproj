@@ -14,6 +14,7 @@
 		56158AC92CBF2B2C00A0D7FF /* TapePalmaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AC82CBF2B2C00A0D7FF /* TapePalmaresTests.swift */; };
 		56158AD32CBF2B2C00A0D7FF /* TapePalmaresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AD22CBF2B2C00A0D7FF /* TapePalmaresUITests.swift */; };
 		56158AD52CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */; };
+		56AE755F2CC1BCDF0025856D /* FutebolTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		56158ACE2CBF2B2C00A0D7FF /* TapePalmaresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapePalmaresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56158AD22CBF2B2C00A0D7FF /* TapePalmaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapePalmaresUITests.swift; sourceTree = "<group>"; };
 		56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapePalmaresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutebolTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		56158AB62CBF2B2900A0D7FF /* TapePalmares */ = {
 			isa = PBXGroup;
 			children = (
+				56AE755D2CC1BCC30025856D /* Model */,
 				56158AB72CBF2B2900A0D7FF /* TapePalmaresApp.swift */,
 				56158AB92CBF2B2900A0D7FF /* ContentView.swift */,
 				56158ABB2CBF2B2C00A0D7FF /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */,
 			);
 			path = TapePalmaresUITests;
+			sourceTree = "<group>";
+		};
+		56AE755D2CC1BCC30025856D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				56158ABA2CBF2B2900A0D7FF /* ContentView.swift in Sources */,
 				56158AB82CBF2B2900A0D7FF /* TapePalmaresApp.swift in Sources */,
+				56AE755F2CC1BCDF0025856D /* FutebolTimes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
