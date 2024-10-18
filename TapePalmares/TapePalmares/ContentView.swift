@@ -9,58 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var frames = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
     @State var offsetTimes: CGFloat = 0
     @State var offsetTorneios: CGFloat = 0
     @State var offsetAnnos: CGFloat = 0
-    
-    let flamengo = Time(
-        nombre: "Flamengo",
-        titulos: [
-            Campeao(nombre: "Campeonato Carioca", año: 1972),
-            Campeao(nombre: "Campeonato Carioca", año: 1974),
-            Campeao(nombre: "Campeonato Brasileiro Série A", año: 1971),
-            Campeao(nombre: "Taça Guanabara", año: 1970),
-            Campeao(nombre: "Taça Guanabara", año: 1972),
-            Campeao(nombre: "Taça Guanabara", año: 1973),
-        ],
-        torneosJugados: [
-            Torneio(nombre: "Campeonato Carioca", año: 1970),
-            Torneio(nombre: "Campeonato Carioca", año: 1971),
-            Torneio(nombre: "Campeonato Carioca", año: 1972),
-            Torneio(nombre: "Campeonato Carioca", año: 1973),
-            Torneio(nombre: "Campeonato Carioca", año: 1974),
-            Torneio(nombre: "Campeonato Brasileiro Série A", año: 1971),
-            Torneio(nombre: "Campeonato Brasileiro Série A", año: 1972),
-            Torneio(nombre: "Campeonato Brasileiro Série A", año: 1973),
-            Torneio(nombre: "Campeonato Brasileiro Série A", año: 1974),
-        ]
-    )
-
-    let fluminense = Time(
-        nombre: "Fluminense",
-        titulos: [
-            Campeao(nombre: "Campeonato Carioca", año: 1971),
-            Campeao(nombre: "Campeonato Carioca", año: 1973),
-            Campeao(nombre: "Campeonato Carioca", año: 1975),
-            Campeao(nombre: "Campeonato Carioca", año: 1976)
-        ],
-        torneosJugados: [
-            Torneio(nombre: "Campeonato Carioca", año: 1970),
-            Torneio(nombre: "Campeonato Carioca", año: 1971),
-            Torneio(nombre: "Campeonato Carioca", año: 1972),
-            Torneio(nombre: "Campeonato Carioca", año: 1973),
-            Torneio(nombre: "Campeonato Brasileiro Série A", año: 1970),
-        ]
-    )
-    
     @State private var times: [Time]
-    var torneios: [Torneio]
-    var annos = [1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980]
+    @State private var torneios: [Torneio]
+    var annos = [1960, 1962, 1968, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1982]
     
     init() {
-        times = [flamengo, fluminense]
-        torneios = [            
+        times = [flamengo, fluminense, vascoDaGama, botafogo, america, bangu, saoCristovao]
+        torneios = [
             Torneio(nombre: "Campeonato Carioca", año: 1970),
             Torneio(nombre: "Campeonato Brasileiro Série A", año: 1971),
             Torneio(nombre: "Taça Guanabara", año: 1972),
@@ -70,13 +28,14 @@ struct ContentView: View {
     func queCampeoes(anno: Int) {
         var timesDoAnno = times.filter { time in
             time.titulos.contains { campeao in
-                campeao.año == anno
+                campeao.año == anno && 
+                time.eleito &&
+                torneios.filter { $0.eleito }.map { $0.nombre }.contains(campeao.nombre)
             }
         }
         for time in timesDoAnno {
             print(time.description())
         }
-//        print("\(timesDoAnno)")
     }
 
     var body: some View {
@@ -98,9 +57,8 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
-                .frame(width: 1024, height: 123)
+                .frame(width: 2057, height: 123)
                 .offset(x: offsetTimes)
-                
                 .gesture(
                     DragGesture()
                         .onEnded { value in
@@ -113,9 +71,13 @@ struct ContentView: View {
                 // torneio
                 HStack {
                     Color(.pink)
-                    ForEach(torneios, id: \.self) { t in
+                    ForEach($torneios, id: \.self) { $t in
                         Text(t.nombre)
                             .font(.system(size: 64))
+                            .onTapGesture {
+                                print("Eleito \(t.nombre)")
+                                t.eleito.toggle()
+                            }
                         Spacer()
                     }
                 }
@@ -142,7 +104,7 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
-                .frame(width: 1823, height: 123)
+                .frame(width: 2023, height: 123)
                 .offset(x: offsetAnnos)
                 .gesture(
                     DragGesture()

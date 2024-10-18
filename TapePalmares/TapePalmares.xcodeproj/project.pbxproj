@@ -15,6 +15,7 @@
 		56158AD32CBF2B2C00A0D7FF /* TapePalmaresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AD22CBF2B2C00A0D7FF /* TapePalmaresUITests.swift */; };
 		56158AD52CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */; };
 		56AE755F2CC1BCDF0025856D /* FutebolTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */; };
+		56E8AD2A2CC2D085001DDA69 /* MockTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8AD292CC2D085001DDA69 /* MockTimes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		56158AD22CBF2B2C00A0D7FF /* TapePalmaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapePalmaresUITests.swift; sourceTree = "<group>"; };
 		56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapePalmaresUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutebolTimes.swift; sourceTree = "<group>"; };
+		56E8AD292CC2D085001DDA69 /* MockTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */,
+				56E8AD292CC2D085001DDA69 /* MockTimes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				56158ABA2CBF2B2900A0D7FF /* ContentView.swift in Sources */,
 				56158AB82CBF2B2900A0D7FF /* TapePalmaresApp.swift in Sources */,
+				56E8AD2A2CC2D085001DDA69 /* MockTimes.swift in Sources */,
 				56AE755F2CC1BCDF0025856D /* FutebolTimes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
