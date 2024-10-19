@@ -19,9 +19,9 @@ struct ContentView: View {
     init() {
         times = [flamengo, fluminense, vascoDaGama, botafogo, america, bangu, saoCristovao]
         torneios = [
-            Torneio(nombre: "Campeonato Carioca", año: 1970),
-            Torneio(nombre: "Campeonato Brasileiro Série A", año: 1971),
-            Torneio(nombre: "Taça Guanabara", año: 1972),
+            Torneio(nombre: "Campeonato Carioca", asset: "torneiocarioca", año: 1970),
+            Torneio(nombre: "Campeonato Brasileiro Série A", asset: "torneiobrasileiro", año: 1971),
+            Torneio(nombre: "Taça Guanabara", asset: "torneiotacaguanabara", año: 1972),
         ]
     }
     
@@ -53,7 +53,7 @@ struct ContentView: View {
                             )
                     }
                 }
-                .frame(width: 768, height: 123)
+                .frame(width: 765, height: 123)
                 .offset(x: offsetTimes)
                 .gesture(
                     DragGesture()
@@ -66,27 +66,15 @@ struct ContentView: View {
                 
                 // torneio
                 HStack {
-                    Color(.pink)
                     ForEach($torneios, id: \.self) { $t in
-                        Text(t.nombre)
-                            .font(.system(size: 64))
-                            .onTapGesture {
-                                print("Eleito \(t.nombre)")
-                                t.eleito.toggle()
-                            }
-                        Spacer()
+                        Rectangle()
+                            .modifier(
+                                ModifierFutebolTimeLogo(time: t.asset, onTap: { t.eleito.toggle() })
+                            )
                     }
                 }
-                .frame(width: 1024, height: 123)
+                .frame(width: 380, height: 101)
                 .offset(x: offsetTorneios)
-                .gesture(
-                    DragGesture()
-                        .onEnded { value in
-                            withAnimation {
-                                offsetTorneios = value.translation.width
-                            }
-                        }
-                )
                 
                 // anno
                 HStack {

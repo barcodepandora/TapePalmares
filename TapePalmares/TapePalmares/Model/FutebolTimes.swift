@@ -31,7 +31,22 @@ struct Campeao: Hashable {
 
 struct Torneio: Hashable {
     let nombre: String
+    var asset: String
     let año: Int
     var eleito = false
+    
+    init(nombre: String, asset: String, año: Int, eleito: Bool = false) {
+        self.nombre = nombre
+        self.asset = asset
+        self.año = año
+        self.eleito = eleito
+    }
+
+    init(nombre: String, año: Int, eleito: Bool = false) {
+        self.nombre = nombre
+        self.asset = ""
+        self.año = año
+        self.eleito = eleito
+    }
 }
 

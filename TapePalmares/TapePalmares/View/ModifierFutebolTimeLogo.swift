@@ -19,7 +19,7 @@ struct ModifierFutebolTimeLogo: ViewModifier {
                 Image(time)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 64, height: 86)
+                    .frame(width: 101, height: 101)
                     .clipped()
                     .padding()
             )

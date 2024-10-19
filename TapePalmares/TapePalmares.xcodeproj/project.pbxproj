@@ -22,6 +22,9 @@
 		563B49EE2CC4073C00C789C0 /* america.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49ED2CC4073C00C789C0 /* america.png */; };
 		563B49F02CC4075100C789C0 /* bangu.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49EF2CC4075100C789C0 /* bangu.png */; };
 		563B49F22CC4076900C789C0 /* saocristovao.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49F12CC4076900C789C0 /* saocristovao.png */; };
+		563B49F72CC4155A00C789C0 /* torneiotacaguanabara.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49F42CC4155A00C789C0 /* torneiotacaguanabara.png */; };
+		563B49F82CC4155A00C789C0 /* torneiobrasileiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 563B49F52CC4155A00C789C0 /* torneiobrasileiro.jpg */; };
+		563B49F92CC4155A00C789C0 /* torneiocarioca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 563B49F62CC4155A00C789C0 /* torneiocarioca.jpg */; };
 		56AE755F2CC1BCDF0025856D /* FutebolTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */; };
 		56E8AD2A2CC2D085001DDA69 /* MockTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8AD292CC2D085001DDA69 /* MockTimes.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,9 @@
 		563B49ED2CC4073C00C789C0 /* america.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = america.png; sourceTree = "<group>"; };
 		563B49EF2CC4075100C789C0 /* bangu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bangu.png; sourceTree = "<group>"; };
 		563B49F12CC4076900C789C0 /* saocristovao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saocristovao.png; sourceTree = "<group>"; };
+		563B49F42CC4155A00C789C0 /* torneiotacaguanabara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = torneiotacaguanabara.png; sourceTree = "<group>"; };
+		563B49F52CC4155A00C789C0 /* torneiobrasileiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = torneiobrasileiro.jpg; sourceTree = "<group>"; };
+		563B49F62CC4155A00C789C0 /* torneiocarioca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = torneiocarioca.jpg; sourceTree = "<group>"; };
 		56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutebolTimes.swift; sourceTree = "<group>"; };
 		56E8AD292CC2D085001DDA69 /* MockTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +166,9 @@
 				563B49ED2CC4073C00C789C0 /* america.png */,
 				563B49EF2CC4075100C789C0 /* bangu.png */,
 				563B49F12CC4076900C789C0 /* saocristovao.png */,
+				563B49F52CC4155A00C789C0 /* torneiobrasileiro.jpg */,
+				563B49F62CC4155A00C789C0 /* torneiocarioca.jpg */,
+				563B49F42CC4155A00C789C0 /* torneiotacaguanabara.png */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -286,14 +295,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				563B49EE2CC4073C00C789C0 /* america.png in Resources */,
+				563B49F82CC4155A00C789C0 /* torneiobrasileiro.jpg in Resources */,
 				563B49F02CC4075100C789C0 /* bangu.png in Resources */,
 				56158ABF2CBF2B2C00A0D7FF /* Preview Assets.xcassets in Resources */,
 				563B49F22CC4076900C789C0 /* saocristovao.png in Resources */,
 				56158ABC2CBF2B2C00A0D7FF /* Assets.xcassets in Resources */,
 				563B49E62CC406B000C789C0 /* flamengo.png in Resources */,
+				563B49F72CC4155A00C789C0 /* torneiotacaguanabara.png in Resources */,
 				563B49EA2CC406E000C789C0 /* botafogo.png in Resources */,
 				563B49E82CC406CA00C789C0 /* fluminense.png in Resources */,
 				563B49EC2CC4070900C789C0 /* vascodagama.png in Resources */,
+				563B49F92CC4155A00C789C0 /* torneiocarioca.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
