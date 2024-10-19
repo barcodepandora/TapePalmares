@@ -9,6 +9,7 @@ import Foundation
 
 let flamengo = Time(
     nombre: "Flamengo",
+    asset: "flamengo",
     titulos: [
         Campeao(nombre: "Campeonato Carioca", año: 1972),
         Campeao(nombre: "Campeonato Carioca", año: 1974),
@@ -32,6 +33,7 @@ let flamengo = Time(
 
 let fluminense = Time(
     nombre: "Fluminense",
+    asset: "fluminense",
     titulos: [
         Campeao(nombre: "Campeonato Carioca", año: 1971),
         Campeao(nombre: "Campeonato Carioca", año: 1973),
@@ -49,6 +51,7 @@ let fluminense = Time(
 
 let vascoDaGama = Time(
     nombre: "Vasco da Gama",
+    asset: "vascodagama",
     titulos: [
         Campeao(nombre: "Campeonato Carioca", año: 1970),
         Campeao(nombre: "Campeonato Brasileiro Série A", año: 1974)
@@ -64,6 +67,7 @@ let vascoDaGama = Time(
 
 let botafogo = Time(
     nombre: "Botafogo",
+    asset: "botafogo",
     titulos: [
         Campeao(nombre: "Campeonato Carioca", año: 1968),
         Campeao(nombre: "Taça Brasil", año: 1968),
@@ -81,6 +85,7 @@ let botafogo = Time(
 
 let america = Time(
     nombre: "America",
+    asset: "america",
     titulos: [
         Campeao(nombre: "Campeonato Carioca", año: 1960),
         Campeao(nombre: "Torneio dos Campeões", año: 1982)
@@ -93,6 +98,7 @@ let america = Time(
 
 let bangu = Time(
     nombre: "Bangu",
+    asset: "bangu",
     titulos: [
         Campeao(nombre: "Campeonato Carioca", año: 1966)
     ],
@@ -103,6 +109,7 @@ let bangu = Time(
 
 let saoCristovao = Time(
     nombre: "São Cristóvão",
+    asset: "saocristovao",
     titulos: [
         Campeao(nombre: "Campeonato Carioca", año: 1926)
     ],

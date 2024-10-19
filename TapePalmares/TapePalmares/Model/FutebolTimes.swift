@@ -9,6 +9,7 @@ import Foundation
 
 struct Time: Hashable {
     let nombre: String
+    let asset: String
     let titulos: [Campeao]
     let torneosJugados: [Torneio]
     var eleito = false

@@ -46,18 +46,14 @@ struct ContentView: View {
                 
                 // time
                 HStack {
-                    Color(.pink)
                     ForEach($times, id: \.self) { $t in
-                        Text(t.nombre)
-                            .font(.system(size: 64))
-                            .onTapGesture {
-                                print("Eleito \(t.nombre)")
-                                t.eleito.toggle()
-                            }
-                        Spacer()
+                        Rectangle()
+                            .modifier(
+                                ModifierFutebolTimeLogo(time: t.asset, onTap: { t.eleito.toggle() })
+                            )
                     }
                 }
-                .frame(width: 2057, height: 123)
+                .frame(width: 768, height: 123)
                 .offset(x: offsetTimes)
                 .gesture(
                     DragGesture()

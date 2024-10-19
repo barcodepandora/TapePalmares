@@ -14,6 +14,14 @@
 		56158AC92CBF2B2C00A0D7FF /* TapePalmaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AC82CBF2B2C00A0D7FF /* TapePalmaresTests.swift */; };
 		56158AD32CBF2B2C00A0D7FF /* TapePalmaresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AD22CBF2B2C00A0D7FF /* TapePalmaresUITests.swift */; };
 		56158AD52CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */; };
+		563B49E32CC405A300C789C0 /* ModifierFutebolTimeLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563B49E22CC405A300C789C0 /* ModifierFutebolTimeLogo.swift */; };
+		563B49E62CC406B000C789C0 /* flamengo.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49E52CC406B000C789C0 /* flamengo.png */; };
+		563B49E82CC406CA00C789C0 /* fluminense.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49E72CC406CA00C789C0 /* fluminense.png */; };
+		563B49EA2CC406E000C789C0 /* botafogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49E92CC406E000C789C0 /* botafogo.png */; };
+		563B49EC2CC4070900C789C0 /* vascodagama.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49EB2CC4070900C789C0 /* vascodagama.png */; };
+		563B49EE2CC4073C00C789C0 /* america.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49ED2CC4073C00C789C0 /* america.png */; };
+		563B49F02CC4075100C789C0 /* bangu.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49EF2CC4075100C789C0 /* bangu.png */; };
+		563B49F22CC4076900C789C0 /* saocristovao.png in Resources */ = {isa = PBXBuildFile; fileRef = 563B49F12CC4076900C789C0 /* saocristovao.png */; };
 		56AE755F2CC1BCDF0025856D /* FutebolTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */; };
 		56E8AD2A2CC2D085001DDA69 /* MockTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8AD292CC2D085001DDA69 /* MockTimes.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +54,14 @@
 		56158ACE2CBF2B2C00A0D7FF /* TapePalmaresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapePalmaresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56158AD22CBF2B2C00A0D7FF /* TapePalmaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapePalmaresUITests.swift; sourceTree = "<group>"; };
 		56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapePalmaresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		563B49E22CC405A300C789C0 /* ModifierFutebolTimeLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierFutebolTimeLogo.swift; sourceTree = "<group>"; };
+		563B49E52CC406B000C789C0 /* flamengo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flamengo.png; sourceTree = "<group>"; };
+		563B49E72CC406CA00C789C0 /* fluminense.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fluminense.png; sourceTree = "<group>"; };
+		563B49E92CC406E000C789C0 /* botafogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botafogo.png; sourceTree = "<group>"; };
+		563B49EB2CC4070900C789C0 /* vascodagama.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vascodagama.png; sourceTree = "<group>"; };
+		563B49ED2CC4073C00C789C0 /* america.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = america.png; sourceTree = "<group>"; };
+		563B49EF2CC4075100C789C0 /* bangu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bangu.png; sourceTree = "<group>"; };
+		563B49F12CC4076900C789C0 /* saocristovao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saocristovao.png; sourceTree = "<group>"; };
 		56AE755E2CC1BCDF0025856D /* FutebolTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutebolTimes.swift; sourceTree = "<group>"; };
 		56E8AD292CC2D085001DDA69 /* MockTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +114,8 @@
 		56158AB62CBF2B2900A0D7FF /* TapePalmares */ = {
 			isa = PBXGroup;
 			children = (
+				563B49E42CC4066E00C789C0 /* Media */,
+				563B49F32CC407E500C789C0 /* View */,
 				56AE755D2CC1BCC30025856D /* Model */,
 				56158AB72CBF2B2900A0D7FF /* TapePalmaresApp.swift */,
 				56158AB92CBF2B2900A0D7FF /* ContentView.swift */,
@@ -130,6 +148,28 @@
 				56158AD42CBF2B2C00A0D7FF /* TapePalmaresUITestsLaunchTests.swift */,
 			);
 			path = TapePalmaresUITests;
+			sourceTree = "<group>";
+		};
+		563B49E42CC4066E00C789C0 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				563B49E52CC406B000C789C0 /* flamengo.png */,
+				563B49E72CC406CA00C789C0 /* fluminense.png */,
+				563B49E92CC406E000C789C0 /* botafogo.png */,
+				563B49EB2CC4070900C789C0 /* vascodagama.png */,
+				563B49ED2CC4073C00C789C0 /* america.png */,
+				563B49EF2CC4075100C789C0 /* bangu.png */,
+				563B49F12CC4076900C789C0 /* saocristovao.png */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		563B49F32CC407E500C789C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				563B49E22CC405A300C789C0 /* ModifierFutebolTimeLogo.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		56AE755D2CC1BCC30025856D /* Model */ = {
@@ -245,8 +285,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563B49EE2CC4073C00C789C0 /* america.png in Resources */,
+				563B49F02CC4075100C789C0 /* bangu.png in Resources */,
 				56158ABF2CBF2B2C00A0D7FF /* Preview Assets.xcassets in Resources */,
+				563B49F22CC4076900C789C0 /* saocristovao.png in Resources */,
 				56158ABC2CBF2B2C00A0D7FF /* Assets.xcassets in Resources */,
+				563B49E62CC406B000C789C0 /* flamengo.png in Resources */,
+				563B49EA2CC406E000C789C0 /* botafogo.png in Resources */,
+				563B49E82CC406CA00C789C0 /* fluminense.png in Resources */,
+				563B49EC2CC4070900C789C0 /* vascodagama.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56158ABA2CBF2B2900A0D7FF /* ContentView.swift in Sources */,
+				563B49E32CC405A300C789C0 /* ModifierFutebolTimeLogo.swift in Sources */,
 				56158AB82CBF2B2900A0D7FF /* TapePalmaresApp.swift in Sources */,
 				56E8AD2A2CC2D085001DDA69 /* MockTimes.swift in Sources */,
 				56AE755F2CC1BCDF0025856D /* FutebolTimes.swift in Sources */,
